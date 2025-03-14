@@ -1,0 +1,28 @@
+url: https://hungms.github.io/plotr
+authors:
+  Matthew Hung:
+    href: https://hungms.github.io/Portfolio/
+
+template:
+  bootstrap: 5
+  bootswatch: flatly
+
+navbar:
+  structure:
+    left:
+      - articles
+      - reference
+    right:
+      - search
+      - github
+      - lightswitch
+
+reference:
+  - title: Palette Functions
+    contents:
+      - matches("palette")
+  - title: Plot Functions
+    contents:
+      - starts_with("theme_")
+      - ends_with("_aes")
+      - starts_with("plot_")

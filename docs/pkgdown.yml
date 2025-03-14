@@ -2,7 +2,7 @@ pandoc: '3.3'
 pkgdown: 2.1.1.9000
 pkgdown_sha: 71fd32ce95f17b379e57e7e33f2294bc034727fd
 articles: {}
-last_built: 2025-03-14T14:37Z
+last_built: 2025-03-14T14:45Z
 urls:
   reference: https://hungms.github.io/plotr/reference
   article: https://hungms.github.io/plotr/articles

@@ -1,6 +1,6 @@
 ## Boot
-# roxygen2::roxygenise()
 # devtools::document()
+# roxygen2::roxygenise()
 # usethis::use_git()
 # pkgdown::build_site()
 # usethis::use_pkgdown_github_pages()

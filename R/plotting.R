@@ -21,8 +21,7 @@ theme_border <- function(){
     ggplot2::theme_bw() %+replace%
     theme(
         panel.grid = element_blank(),
-        panel.background = element_blank(),
-        panel.border = element_rect(colour = "black", fill = NA, size = 1))}
+        panel.background = element_blank())}
 
 #' theme_line
 #'
@@ -58,12 +57,12 @@ umap_aes <- function(type = "UMAP"){
         ylab(paste0(type, "2")),
         theme(
             panel.background = element_rect(fill = "white"),
-            panel.grid = element_blank(),
-            panel.border = element_rect(colour = "black", fill=NA, size=1),
-            axis.text.x=element_blank(),
-            axis.ticks.x=element_blank(),
-            axis.text.y=element_blank(),
-            axis.ticks.y=element_blank(),
+            panel.grid = element_line(color = "grey90"),
+            panel.border = element_rect(colour = "black", fill=NA, size=0.8),
+            #axis.text.x=element_blank(),
+            #axis.ticks.x=element_blank(),
+            #axis.text.y=element_blank(),
+            #axis.ticks.y=element_blank(),
             aspect.ratio = 1))}
 
 #' plot_percent

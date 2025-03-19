@@ -7,7 +7,7 @@ theme_text <- function(){
         text = element_text(family = "Helvetica"),
         legend.title = element_text(size = 14),
         legend.text = element_text(size = 12),
-        axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
+        axis.text.x = element_text(angle = 0, hjust = 0.5),
         axis.ticks.length = unit(0.2, "cm"),
         plot.title = element_text(hjust = 0.5, size = 16, face = "bold"),
         axis.title = element_text(size = 14),

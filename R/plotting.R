@@ -20,7 +20,6 @@ theme_text <- function(){
 theme_border <- function(){
     ggplot2::theme_bw() %+replace%
     theme(
-        panel.grid = element_blank(),
         panel.background = element_blank())}
 
 #' theme_line
@@ -36,6 +35,19 @@ theme_line <- function(){
             panel.background = element_blank(),
             panel.border = element_blank(),
             axis.line = element_line(color = "black")))}
+
+#' theme_noaxisticks
+#'
+#' ggplot2 aesthetic option with no grid lines
+#' @export
+theme_nogridticks <- function(){
+    theme(
+        panel.grid = element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank()
+        )}
 
 #' facet_aes
 #'
@@ -59,10 +71,6 @@ umap_aes <- function(type = "UMAP"){
             panel.background = element_rect(fill = "white"),
             panel.grid = element_line(color = "grey90"),
             panel.border = element_rect(colour = "black", fill=NA, size=0.8),
-            #axis.text.x=element_blank(),
-            #axis.ticks.x=element_blank(),
-            #axis.text.y=element_blank(),
-            #axis.ticks.y=element_blank(),
             aspect.ratio = 1))}
 
 #' plot_percent

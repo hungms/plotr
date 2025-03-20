@@ -58,7 +58,8 @@ theme_noaxisticks <- function(){
 #' @export
 theme_gridlines <- function(){
     theme(
-        panel.grid = element_line(color = "grey90", linetype = "dashed"))}
+        panel.grid.major = element_line(color = "grey60", size = 0.15, linetype = "dashed"),
+        panel.grid.minor = element_line(color = "grey60", size = 0.1, linetype = "dashed"))}
 
 #' facet_aes
 #'
@@ -66,8 +67,7 @@ theme_gridlines <- function(){
 #' @export
 facet_aes <- function(){
     theme(
-	    strip.background = element_blank(),
-        strip.text = element_text(face="bold", size=14))}
+        strip.text = element_text(face="bold", size=16))}
 
 #' umap_aes
 #'

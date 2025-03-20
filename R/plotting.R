@@ -18,9 +18,11 @@ theme_text <- function(){
 #' ggplot2 aesthetic option with borders
 #' @export
 theme_border <- function(){
-    ggplot2::theme_bw() %+replace%
-    theme(
-        panel.background = element_blank())}
+    list(
+        ggplot2::theme_bw() %+replace%
+        theme(
+            panel.background = element_blank()),
+        theme_gridlines())}
 
 #' theme_line
 #'
@@ -29,18 +31,19 @@ theme_border <- function(){
 theme_line <- function(){
     list(
         scale_y_continuous(expand = expansion(mult = c(0.05, 0.05))),
+        
         ggplot2::theme_bw() %+replace%
         theme(
-            panel.grid = element_blank(),
             panel.background = element_blank(),
             panel.border = element_blank(),
-            axis.line = element_line(color = "black")))}
+            axis.line = element_line(color = "black")),
+        theme_gridlines())}
 
 #' theme_noaxisticks
 #'
 #' ggplot2 aesthetic option with no grid lines
 #' @export
-theme_nogridticks <- function(){
+theme_noaxisticks <- function(){
     theme(
         panel.grid = element_blank(),
         axis.text.x=element_blank(),
@@ -48,6 +51,14 @@ theme_nogridticks <- function(){
         axis.text.y=element_blank(),
         axis.ticks.y=element_blank()
         )}
+
+#' theme_gridlines,
+#'
+#' ggplot2 aesthetic option with lighter grid lines
+#' @export
+theme_gridlines <- function(){
+    theme(
+        panel.grid = element_line(color = "grey90"))}
 
 #' facet_aes
 #'
@@ -67,9 +78,9 @@ umap_aes <- function(type = "UMAP"){
     list(
 	    xlab(paste0(type, "1")),
         ylab(paste0(type, "2")),
+        theme_gridlines(),
         theme(
             panel.background = element_rect(fill = "white"),
-            panel.grid = element_line(color = "grey90"),
             panel.border = element_rect(colour = "black", fill=NA, size=0.8),
             aspect.ratio = 1))}
 

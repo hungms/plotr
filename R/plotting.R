@@ -58,7 +58,7 @@ theme_noaxisticks <- function(){
 #' @export
 theme_gridlines <- function(){
     theme(
-        panel.grid = element_line(color = "grey90"))}
+        panel.grid = element_line(color = "grey90", linetype = "dashed"))}
 
 #' facet_aes
 #'

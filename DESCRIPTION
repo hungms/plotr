@@ -13,7 +13,8 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 URL: https://hungms.github.io/plotr/
 LazyData: true
-Depends: 
+Imports:
+    rlang,
     ggplot2,
     dplyr,
     magrittr,

@@ -1,0 +1,37 @@
+url: https://hungms.github.io/plotr/
+template:
+  bootstrap: 5
+  bootswatch: flatly
+navbar:
+  structure:
+    left:
+    - intro
+    - reference
+    - news
+    right: github
+reference:
+- title: Themes
+  desc: |
+    Functions for customizing plot appearance
+  contents:
+  - theme_text
+  - theme_border
+  - theme_line
+  - theme_noaxisticks
+  - theme_gridlines
+  - facet_aes
+  - umap_aes
+- title: Color Palettes
+  desc: |
+    Color palettes and related functions
+  contents:
+  - color_palettes
+  - get_palette
+  - display_palettes
+  - palette_list
+  - starts_with("pal_")
+- title: Plot Functions
+  desc: |
+    Functions for generating plots
+  contents: plot_percent
+

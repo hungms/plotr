@@ -3,7 +3,7 @@ pkgdown: 2.1.1
 pkgdown_sha: ~
 articles:
   plotr: plotr.html
-last_built: 2025-04-02T01:46Z
+last_built: 2025-04-02T09:53Z
 urls:
   reference: https://hungms.github.io/plotr/reference
   article: https://hungms.github.io/plotr/articles

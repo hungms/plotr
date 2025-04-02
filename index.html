@@ -105,6 +105,14 @@
 <span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"hungms/plotr"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
+<h2 id="dependencies">Dependencies<a class="anchor" aria-label="anchor" href="#dependencies"></a>
+</h2>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Install required packages from CRAN</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"ggplot2"</span>, <span class="st">"dplyr"</span>, <span class="st">"magrittr"</span>, <span class="st">"stringr"</span>, <span class="st">"cowplot"</span>, <span class="st">"viridis"</span>, <span class="st">"ggrepel"</span>, <span class="st">"patchwork"</span>, <span class="st">"wesanderson"</span>, <span class="st">"RColorBrewer"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<p><code>plotr</code> depends on the following packages: * <code>ggplot2</code> - For creating graphics * <code>dplyr</code> - For data manipulation in plot_percent() * <code>magrittr</code> - For the pipe operator (%&gt;%) used in data processing * <code>stringr</code> - For string operations in get_palette() * Supporting packages: cowplot, viridis, ggrepel, patchwork, wesanderson, RColorBrewer</p>
+</div>
+<div class="section level2">
 <h2 id="example-comparison">Example Comparison<a class="anchor" aria-label="anchor" href="#example-comparison"></a>
 </h2>
 <p><code>plotr</code> offers multiple theme options to suit different visualization needs, all providing enhanced aesthetics compared to the default ggplot2 themes:</p>
@@ -123,7 +131,7 @@
 <div class="section level3">
 <h3 id="scatter-plot-with-custom-theme">Scatter Plot with Custom Theme<a class="anchor" aria-label="anchor" href="#scatter-plot-with-custom-theme"></a>
 </h3>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://hungms.github.io/plotr/">plotr</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span></span>
 <span></span>
@@ -139,7 +147,7 @@
 <div class="section level3">
 <h3 id="percentage-plot-example">Percentage Plot Example<a class="anchor" aria-label="anchor" href="#percentage-plot-example"></a>
 </h3>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Convert categorical variables to factors</span></span>
 <span><span class="va">mtcars</span><span class="op">$</span><span class="va">cyl</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">as.factor</a></span><span class="op">(</span><span class="va">mtcars</span><span class="op">$</span><span class="va">cyl</span><span class="op">)</span></span>
 <span><span class="va">mtcars</span><span class="op">$</span><span class="va">am</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">as.factor</a></span><span class="op">(</span><span class="va">mtcars</span><span class="op">$</span><span class="va">am</span><span class="op">)</span></span>
@@ -156,11 +164,6 @@
 <span>       fill <span class="op">=</span> <span class="st">"Cylinders"</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">ggtitle</a></span><span class="op">(</span><span class="st">"Cylinders by Transmission Type"</span><span class="op">)</span></span></code></pre></div>
 </div>
-</div>
-<div class="section level2">
-<h2 id="dependencies">Dependencies<a class="anchor" aria-label="anchor" href="#dependencies"></a>
-</h2>
-<p><code>plotr</code> depends on the following packages: * <code>ggplot2</code> - For creating graphics * <code>dplyr</code> - For data manipulation in plot_percent() * <code>magrittr</code> - For the pipe operator (%&gt;%) used in data processing * <code>stringr</code> - For string operations in get_palette() * Supporting packages: cowplot, viridis, ggrepel, patchwork, wesanderson, RColorBrewer</p>
 </div>
 <div class="section level2">
 <h2 id="license">License<a class="anchor" aria-label="anchor" href="#license"></a>

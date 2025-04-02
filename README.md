@@ -44,6 +44,18 @@ if (!require("devtools", quietly = TRUE))
 remotes::install_github("hungms/plotr")
 ```
 
+## Dependencies
+```r
+# Install required packages from CRAN
+install.packages(c("ggplot2", "dplyr", "magrittr", "stringr", "cowplot", "viridis", "ggrepel", "patchwork", "wesanderson", "RColorBrewer"))
+```
+`plotr` depends on the following packages:
+* `ggplot2` - For creating graphics
+* `dplyr` - For data manipulation in plot_percent()
+* `magrittr` - For the pipe operator (%>%) used in data processing
+* `stringr` - For string operations in get_palette()
+* Supporting packages: cowplot, viridis, ggrepel, patchwork, wesanderson, RColorBrewer
+
 ## Example Comparison
 
 `plotr` offers multiple theme options to suit different visualization needs, all providing enhanced aesthetics compared to the default ggplot2 themes:
@@ -95,14 +107,6 @@ ggplot(mtcars, aes(x = am, fill = cyl)) +
   ggtitle("Cylinders by Transmission Type")
 ```
 
-## Dependencies
-
-`plotr` depends on the following packages:
-* `ggplot2` - For creating graphics
-* `dplyr` - For data manipulation in plot_percent()
-* `magrittr` - For the pipe operator (%>%) used in data processing
-* `stringr` - For string operations in get_palette()
-* Supporting packages: cowplot, viridis, ggrepel, patchwork, wesanderson, RColorBrewer
 
 ## License
 

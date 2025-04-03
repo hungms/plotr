@@ -14,21 +14,14 @@ reference:
   desc: |
     Functions for customizing plot appearance
   contents:
-  - theme_text
-  - theme_border
-  - theme_line
-  - theme_noaxisticks
-  - theme_gridlines
-  - facet_aes
-  - umap_aes
+  - starts_with("theme_")
+  - starts_with("no_")
+  - matches("aes")
 - title: Color Palettes
   desc: |
     Color palettes and related functions
   contents:
-  - color_palettes
-  - get_palette
-  - display_palettes
-  - palette_list
+  - matches("palette")
   - starts_with("pal_")
 - title: Plot Functions
   desc: |

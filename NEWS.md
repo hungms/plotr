@@ -1,8 +1,14 @@
 # plotr NEWS
 
-## plotr 0.1.0
+## v0.1.1
 
-### Breaking changes
+### New Features
+* Added `no_gridlines()` function to remove gridlines from plots
+* Added `no_axis_text()` function to remove axis text from plots
+
+## v0.1.0
+
+### Breaking Changes
 * Removed backward compatibility for legacy palette names
 * All color palettes now use the systematic naming scheme with a `pal_` prefix followed by the palette name and the number of colors available
 * Palettes are now functions that retrieve values from a package environment, requiring `()` when used (e.g., `pal_kelly_20()` instead of `pal_kelly_20`)
@@ -15,9 +21,9 @@
 * Implemented package environment for palette storage, improving performance and memory management
 * Modified `get_palette()` to handle palette functions directly
 
-## plotr 0.0.0.9000 (Development version)
+## v0.0.0.9000 (Development version)
 
-### New features
+### New Features
 * Added various theme functions for ggplot2:
   * `theme_text()`: Typography settings with Helvetica font
   * `theme_border()`: Clean border style

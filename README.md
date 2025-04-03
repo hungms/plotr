@@ -1,4 +1,4 @@
-# plotr
+# plotr: Plot Themes for R
 [![R-CMD-check](https://github.com/hungms/plotr/workflows/R-CMD-check/badge.svg)](https://github.com/hungms/plotr/actions)
 [![pkgdown](https://github.com/hungms/plotr/workflows/pkgdown/badge.svg)](https://github.com/hungms/plotr/actions)
 

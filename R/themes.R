@@ -194,3 +194,43 @@ umap_aes <- function(type = "UMAP", aspect_ratio = 1, border_size = 0.8){
             panel.border = element_rect(colour = "black", fill = NA, size = border_size),
             aspect.ratio = aspect_ratio))
 } 
+
+#' Theme with no grid lines
+#'
+#' A ggplot2 theme with no grid lines
+#'
+#' @return A theme object that can be added to a ggplot object
+#' @examples
+#' \dontrun{
+#' library(ggplot2)
+#' ggplot(mtcars, aes(wt, mpg)) + 
+#'   geom_point() + 
+#'   no_gridlines()
+#' }
+#' @export
+no_gridlines <- function(){
+    theme(
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank())
+}
+
+
+#' Theme with no axis text
+#'
+#' A ggplot2 theme with no axis text
+#'
+#' @return A theme object that can be added to a ggplot object
+#' @examples
+#' \dontrun{
+#' library(ggplot2)
+#' ggplot(mtcars, aes(wt, mpg)) + 
+#'   geom_point() + 
+#'   no_axis_text()
+#' }
+#' @export
+no_axis_text <- function(){
+    theme(
+        axis.text.x = element_blank(),
+        axis.ticks.x = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank())}

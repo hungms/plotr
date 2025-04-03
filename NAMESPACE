@@ -3,6 +3,8 @@
 export(display_palettes)
 export(facet_aes)
 export(get_palette)
+export(no_axis_text)
+export(no_gridlines)
 export(pal_asteroid_5)
 export(pal_blackpink_6)
 export(pal_brbg_11)

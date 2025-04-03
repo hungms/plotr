@@ -12,3 +12,11 @@ A theme object that can be added to a ggplot object
 \description{
 A ggplot2 theme with no grid lines
 }
+\examples{
+\dontrun{
+library(ggplot2)
+ggplot(mtcars, aes(wt, mpg)) + 
+  geom_point() + 
+  no_gridlines()
+}
+}

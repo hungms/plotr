@@ -20,6 +20,33 @@
 #          error-on: '"error"'
 
 
+## GitHub Release Process
+# ----------------------
+# 1. Update NEWS.md with version changes
+#
+# 2. Merge develop into main:
+#    git checkout main
+#    git pull origin main
+#    git merge develop
+#
+# 3. Create version tag:
+#    git tag -a v0.x.x -m "Release version 0.x.x"
+#
+# 4. Push changes to GitHub:
+#    git push origin main
+#    git push origin v0.x.x
+#
+# 5. Return to develop branch:
+#    git checkout develop
+#
+# 6. Create GitHub Release (optional):
+#    - Go to repository on GitHub
+#    - Navigate to "Releases" section
+#    - Click "Draft a new release"
+#    - Select the tag you just pushed
+#    - Add release title and description
+#    - Publish release
+
 #---
 #title: Database
 #vignette: >

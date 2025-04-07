@@ -234,3 +234,24 @@ no_axis_text <- function(){
         axis.ticks.x = element_blank(),
         axis.text.y = element_blank(),
         axis.ticks.y = element_blank())}
+
+
+#' Theme for scatter plots
+#'
+#' A ggplot2 theme with no grid lines and axis text
+#'
+#' @return A theme object that can be added to a ggplot object
+#' @examples
+#' \dontrun{
+#' library(ggplot2)
+#' ggplot(mtcars, aes(wt, mpg)) + 
+#'   geom_point() + 
+#'   theme_scatter()
+#' }
+#' @export
+theme_scatter <- function(){
+    list(
+        theme_border(),
+        theme_text(),
+        geom_hline(yintercept = 0, color = "gray"),
+        geom_vline(xintercept = 0, color = "gray"))}

@@ -1,5 +1,9 @@
 # plotr NEWS
 
+## v0.1.2
+### New Features
+* Added `theme_scatter()` function to plot lines at x = 0 and y = 0
+
 ## v0.1.1
 
 ### New Features

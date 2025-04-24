@@ -1,5 +1,10 @@
 # plotr NEWS
 
+## v0.1.3
+### New Features
+* Added `save_jupyter_plot()` function to save plots into pdf files.
+* Added `add_strip_pal()` function to customize strip background colors
+
 ## v0.1.2
 ### New Features
 * Added `theme_scatter()` function to plot lines at x = 0 and y = 0

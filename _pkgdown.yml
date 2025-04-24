@@ -23,8 +23,14 @@ reference:
   contents:
   - matches("palette")
   - starts_with("pal_")
+  - matches("add_strip_pal")
 - title: Plot Functions
   desc: |
     Functions for generating plots
   contents: plot_percent
+- title: Save Plots
+  desc: |
+    Functions for saving plots
+  contents:
+  - matches("save_")
 

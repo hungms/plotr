@@ -1,7 +1,7 @@
 .onLoad <- function(libname, pkgname) {
   ### load default packages
   packages <- c(
-    "ggplot2", "dplyr", "magrittr", "stringr", "patchwork", "cowplot", "viridis", "ggrepel", "wesanderson", "RColorBrewer")
+    "ggplot2", "dplyr", "magrittr", "stringr", "patchwork", "cowplot", "viridis", "ggrepel", "wesanderson", "RColorBrewer", "ggplotify")
   invisible(lapply(packages, library, character.only = TRUE))
 
   ### start up settings

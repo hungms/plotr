@@ -1,6 +1,6 @@
 Package: plotr
 Title:  Plot Themes for R
-Version: 0.1.0
+Version: 0.1.3
 Authors@R: 
     person(given = "Miu Shing", family = "Hung", email = "matthewhungms@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0009-0004-0412-4374"))
 Description: Provides elegant themes and color palettes for data visualization with ggplot2.
@@ -24,4 +24,5 @@ Imports:
     ggrepel,
     patchwork,
     wesanderson,
-    RColorBrewer
+    RColorBrewer,
+    ggplotify
